@@ -1,3 +1,1 @@
-<?php get_header()?>
-<h1>Wow 404</h1>
-<?php get_footer()?>
+<h1>404 ERROR</h1>

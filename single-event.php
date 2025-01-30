@@ -17,14 +17,11 @@
 <div class="container container--narrow page-section">
     <div class="metabox metabox--position-up metabox--with-home-link">
         <p>
-            <a class="metabox__blog-home-link" href="<?php echo site_url('/news') ?>">
-                <i class="fa fa-home" aria-hidden="true"></i> Blog Home
+            <a class="metabox__blog-home-link" href="<?php echo get_post_type_archive_link('event'); ?>">
+                <i class="fa fa-home" aria-hidden="true"></i> Events Home
             </a>
             <span class="metabox__main">
-                <span>Posted by</span>
-                <span><?php the_author_posts_link(); ?></span> on
-                <span><?php the_time('n.j.y')?></span> in
-                <span><?php the_category(', ')?></span>
+                <?php the_title()?>
             </span>
         </p>
     </div>
