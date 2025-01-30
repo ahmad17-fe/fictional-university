@@ -32,6 +32,7 @@ add_action("after_setup_theme", "university_features");
 function university_post_types()
 {
     register_post_type("event", [
+        "supports"     => ["title", "editor", "excerpt"],
         "rewrite"      => ["slug" => "events"],
         "has_archive"  => true,
         "public"       => true,
